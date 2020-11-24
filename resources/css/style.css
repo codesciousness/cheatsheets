@@ -1,0 +1,146 @@
+@font-face {
+  /* Source uispace.net */
+  font-family: canvas;
+  src: url(../fonts/TheSalvador-Condensed.otf) format("opentype");
+}
+
+/* Universal Styles */
+html {
+  font-size: 2vmin;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side Navigation */
+.sidenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/snowy-mint-gradient.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidenav__a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #8e98cd;
+  height: 8rem;
+  text-decoration: none;
+  font-family: canvas, sans-serif;
+  font-size: 2.5rem;
+  margin: 0.3rem 0;
+  line-height: 8rem;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav__a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.fa-times {
+  color: #8e98cd;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/* Main Content */
+main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  font-family: canvas, sans-serif;
+  color: #8e98cd;
+  margin: 0 4rem;
+  padding: 1rem 0;
+}
+
+.fa-bars {
+  cursor: pointer;
+  float: left;
+}
+
+.header__h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.header__horizontalLine {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url(../images/snowy-mint-gradient.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
+  width: 85%;
+  height: 5px;
+  margin: 2% 0 3% 0;
+}
+
+.header__h2 {
+  letter-spacing: 0.10rem;
+}
+
+/* Table Section */
+.table {
+  border-spacing: 0 5px;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+.table__th {
+  color: #8e98cd;
+  font-size: 1.10rem;
+  text-align: left;
+}
+
+.table__td {
+  background-color: rgba(142, 152, 205, 0.2);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.table__td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.table__td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.table__span {
+  background-color: white;
+  font-family: 'Source Code Pro', Courier, monospace;
+}
+/*# sourceMappingURL=style.css.map */
